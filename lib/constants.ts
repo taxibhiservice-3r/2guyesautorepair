@@ -3,7 +3,7 @@
 // TODO: confirm production domain before launch
 // TODO: add actual sameAs profile URLs once known
 
-export const DOMAIN = "twoguyesautorepair.com" // TODO: confirm
+export const DOMAIN = "twoguysautorepair.net"
 export const SITE_URL = `https://${DOMAIN}`
 
 export const NAP = {

@@ -38,13 +38,42 @@ export const metadata: Metadata = {
     "auto diagnostics Eugene Oregon",
     "Two Guys Automotive Repair",
   ],
+  verification: {
+    google: "F4mSzp1SyDvy3u_bSkx3tCoV3RGT9rQcCAQSYmoaVek",
+  },
   openGraph: {
     siteName: NAP.name,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Two Guys Automotive Repair — Auto Shop in Springfield, OR",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Auto Repair Springfield Oregon | Two Guys Automotive Repair",
+    description:
+      "Trusted auto repair shop in Springfield, OR. Brakes, oil changes, transmission, diagnostics & more. Walk-ins welcome. (541) 744-3626.",
+    images: ["/opengraph-image.png"],
   },
   alternates: {
     canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
 
