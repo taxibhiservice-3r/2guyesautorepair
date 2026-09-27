@@ -26,6 +26,57 @@ export const NAP = {
     "https://maps.google.com/maps?q=191+N+39th+St%2C+Springfield%2C+OR+97478&output=embed",
 } as const
 
+// Service pages for the dedicated route architecture
+export const SERVICE_PAGES = [
+  {
+    slug: "brake-repair-springfield-or",
+    name: "Brake Repair",
+    shortDesc: "Pads, rotors, calipers, and fluid — complete brake service in Springfield, OR.",
+  },
+  {
+    slug: "oil-change-springfield-or",
+    name: "Oil Change",
+    shortDesc: "Fast, affordable oil change service — conventional or synthetic, walk-ins welcome.",
+  },
+  {
+    slug: "transmission-service-springfield-or",
+    name: "Transmission Service",
+    shortDesc: "Fluid change, filter replacement, and flush to protect your drivetrain.",
+  },
+  {
+    slug: "auto-diagnostics-springfield-or",
+    name: "Auto Diagnostics",
+    shortDesc: "Check engine light on? We scan and diagnose the root cause.",
+  },
+  {
+    slug: "timing-belt-chain-springfield-or",
+    name: "Timing Belt & Chain",
+    shortDesc: "Timing belt and chain service before failure causes engine damage.",
+  },
+  {
+    slug: "coolant-system-service-springfield-or",
+    name: "Coolant System Service",
+    shortDesc: "Flush and refill to prevent overheating and internal corrosion.",
+  },
+  {
+    slug: "fuel-injection-service-springfield-or",
+    name: "Fuel Injection Service",
+    shortDesc: "Clean injectors and throttle body to restore fuel economy and idle quality.",
+  },
+  {
+    slug: "power-steering-service-springfield-or",
+    name: "Power Steering Service",
+    shortDesc: "Fluid flush to maintain smooth, responsive steering and protect the pump.",
+  },
+] as const
+
+// Location pages for the dedicated location route architecture
+export const LOCATION_PAGES = [
+  { slug: "springfield-or-auto-repair", city: "Springfield", state: "OR", primary: true },
+  { slug: "eugene-or-auto-repair", city: "Eugene", state: "OR", primary: false },
+  { slug: "junction-city-or-auto-repair", city: "Junction City", state: "OR", primary: false },
+] as const
+
 // TODO: replace all placeholder hours — only Monday 8:00 AM confirmed by owner
 export const HOURS: {
   day: string

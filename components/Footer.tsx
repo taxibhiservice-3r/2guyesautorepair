@@ -5,6 +5,7 @@ import { NAP, HOURS, RATINGS, SITE_URL } from "@/lib/constants"
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/locations", label: "Locations" },
   { href: "/reviews", label: "Reviews" },
   { href: "/contact", label: "Contact" },
 ]

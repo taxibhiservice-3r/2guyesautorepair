@@ -4,6 +4,7 @@ import { NAP } from "@/lib/constants"
 
 const NAV = [
   { href: "/services", label: "Services" },
+  { href: "/locations", label: "Locations" },
   { href: "/reviews", label: "Reviews" },
   { href: "/contact", label: "Contact" },
 ]

@@ -85,6 +85,62 @@ export function buildBreadcrumbSchema(
   }
 }
 
+export function buildServicePageSchema(
+  name: string,
+  url: string,
+  description: string
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    url,
+    description,
+    provider: {
+      "@type": "AutoRepair",
+      name: NAP.name,
+      url: SITE_URL,
+      telephone: NAP.phone.tel,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: NAP.address.street,
+        addressLocality: NAP.address.city,
+        addressRegion: NAP.address.state,
+        postalCode: NAP.address.zip,
+        addressCountry: "US",
+      },
+    },
+    areaServed: SERVICE_AREA.map((a) => ({ "@type": "City", name: a.city })),
+  }
+}
+
+export function buildLocationPageSchema(city: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    name: NAP.name,
+    url: SITE_URL,
+    telephone: NAP.phone.tel,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: NAP.address.street,
+      addressLocality: NAP.address.city,
+      addressRegion: NAP.address.state,
+      postalCode: NAP.address.zip,
+      addressCountry: "US",
+    },
+    openingHoursSpecification: buildOpeningHours(),
+    areaServed: { "@type": "City", name: city },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "136",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  }
+}
+
 export function buildServiceSchema(service: (typeof SERVICES)[number]) {
   return {
     "@context": "https://schema.org",
