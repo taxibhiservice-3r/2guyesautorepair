@@ -24,17 +24,22 @@ const FAQS = [
     answer:
       "Yes. After we identify the cause and complete the necessary repair, we clear the fault codes and verify the system is operating correctly. If a light returns shortly after clearing, it indicates the underlying issue was not fully resolved — we will investigate further rather than just clearing the code again.",
   },
+  {
+    question: "Where can I get check engine light repair near me in Springfield, OR?",
+    answer:
+      "Two Guys Automotive Repair at 191 N 39th St, Springfield, OR 97478 provides check engine light diagnosis and repair for drivers in Springfield, Eugene, and Junction City. Walk-ins welcome — no appointment needed. Call (541) 744-3626.",
+  },
 ]
 
 export const metadata: Metadata = {
-  title: "Auto Diagnostics & Check Engine Light — Springfield, OR | Two Guys Automotive",
+  title: "Check Engine Light Repair Near Me — Springfield, OR | Two Guys Automotive",
   description:
-    "Check engine light on in Springfield, OR? We scan and diagnose the root cause with professional equipment. Honest results, no guesswork. Call (541) 744-3626.",
+    "Check engine light on in Springfield, OR? We diagnose AND repair the root cause — no guesswork, no unnecessary parts. Walk-ins welcome. Call (541) 744-3626.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Auto Diagnostics — Check Engine Light Springfield, OR | Two Guys Automotive",
+    title: "Check Engine Light Repair in Springfield, OR | Two Guys Automotive",
     description:
-      "Professional auto diagnostics in Springfield, OR. We read fault codes and live sensor data to find the real cause — not just guess. (541) 744-3626.",
+      "Check engine light diagnosis and repair in Springfield, OR. We find the real cause with live data — not just read a code. Walk-ins welcome. (541) 744-3626.",
     url: PAGE_URL,
   },
 }
@@ -182,7 +187,7 @@ export default function AutoDiagnosticsPage() {
             Auto Diagnostics FAQ
           </h2>
           <div
-            className="grid gap-px border sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-px border sm:grid-cols-2"
             style={{ borderColor: "var(--color-border)", backgroundColor: "var(--color-border)" }}
           >
             {FAQS.map((faq) => (
@@ -203,8 +208,8 @@ export default function AutoDiagnosticsPage() {
       </section>
 
       <CtaBlock
-        heading="Check Engine Light On? Come In."
-        subtext="We diagnose the root cause before recommending any repair. 191 N 39th St, Springfield, OR. Walk-ins welcome."
+        heading="Check Engine Light On? We Fix It."
+        subtext="Serving Springfield, Eugene &amp; Junction City, OR. We diagnose AND repair the root cause. Walk-ins welcome — 191 N 39th St, Springfield, OR."
       />
     </>
   )

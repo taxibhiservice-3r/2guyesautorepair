@@ -2,17 +2,17 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { JsonLd } from "@/components/JsonLd"
 import { buildFaqSchema } from "@/lib/schemas"
-import { NAP, SERVICES, REVIEWS, RATINGS, HOURS, SERVICE_AREA, SITE_URL } from "@/lib/constants"
+import { NAP, SERVICE_PAGES, REVIEWS, RATINGS, HOURS, SERVICE_AREA, SITE_URL } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Auto Repair Springfield Oregon | Two Guys Automotive Repair",
   description:
-    "Trusted auto repair shop and mechanic in Springfield, OR. Brakes, oil changes, transmission, diagnostics, timing belts & more. Walk-ins welcome. Call (541) 744-3626.",
+    "Mechanic near you in Springfield, OR — walk-ins welcome, fair prices, honest work. Brakes, oil changes, transmission, diagnostics & more. Call (541) 744-3626.",
   alternates: { canonical: SITE_URL },
   openGraph: {
     title: "Auto Repair Springfield Oregon | Two Guys Automotive Repair",
     description:
-      "Trusted auto shop in Springfield, OR. Brakes, oil changes, transmission, diagnostics & more. Call (541) 744-3626.",
+      "Mechanic near you in Springfield, OR — walk-ins welcome. Brakes, oil changes, transmission, diagnostics & more. (541) 744-3626.",
     url: SITE_URL,
   },
 }
@@ -36,7 +36,7 @@ const FAQS = [
   {
     question: "How do I find a good mechanic near me in Springfield or Eugene?",
     answer:
-      "Two Guys Automotive Repair is a locally owned mechanic shop serving Springfield, Eugene, and Junction City, OR. We offer fair prices, honest diagnostics, and no unnecessary upsells. Call (541) 744-3626 or walk in during business hours.",
+      "Two Guys Automotive Repair — 191 N 39th St, Springfield, OR 97478 — is the mechanic near you for Springfield, Eugene, and Junction City. Locally owned with fair prices, honest diagnostics, and no unnecessary upsells. Walk in any time or call (541) 744-3626.",
   },
   {
     question: "Where can I get an oil change near me in Springfield, OR?",
@@ -111,8 +111,8 @@ export default function HomePage() {
             className="mb-2 max-w-lg text-base"
             style={{ color: "var(--color-secondary)" }}
           >
-            Your trusted mechanic and auto shop in Springfield, OR — brakes, oil changes,
-            transmission, diagnostics, timing belts, and more.
+            Your mechanic near Springfield &amp; Eugene, OR — brakes, oil changes,
+            transmission, diagnostics, timing belts, and more. Walk in any time.
           </p>
 
           <div className="mb-8 flex flex-wrap gap-x-5 gap-y-1">
@@ -169,7 +169,7 @@ export default function HomePage() {
           </h2>
           <p className="mb-10 text-sm" style={{ color: "var(--color-secondary)" }}>
             One mechanic shop, every service your vehicle needs — brakes,{" "}
-            <Link href="/services#oil-changes" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
+            <Link href="/services/oil-change-springfield-or" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
               oil changes
             </Link>
             , transmission, diagnostics, and more.
@@ -182,10 +182,10 @@ export default function HomePage() {
               backgroundColor: "var(--color-border)",
             }}
           >
-            {SERVICES.map((s) => (
+            {SERVICE_PAGES.map((s) => (
               <Link
                 key={s.slug}
-                href={`/services#${s.slug}`}
+                href={`/services/${s.slug}`}
                 className="group flex flex-col gap-2 p-4 transition-colors hover:bg-white/5"
                 style={{ backgroundColor: "var(--color-panel)" }}
               >
@@ -310,15 +310,15 @@ export default function HomePage() {
             Our auto repair garage is located at 191 N 39th St in Springfield, OR —
             conveniently accessible from Eugene, Junction City, and throughout Lane County.
             Whether you need a mechanic near you for a quick{" "}
-            <Link href="/services#oil-changes" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
+            <Link href="/services/oil-change-springfield-or" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
               oil change
             </Link>
             , a{" "}
-            <Link href="/services#brakes" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
+            <Link href="/services/brake-repair-springfield-or" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
               brake inspection
             </Link>
             , or a full{" "}
-            <Link href="/services#auto-diagnostics" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
+            <Link href="/services/auto-diagnostics-springfield-or" className="hover:text-white transition-colors" style={{ color: "var(--color-accent)" }}>
               auto diagnostic
             </Link>
             , we&apos;re the auto shop Springfield and Eugene drivers trust.

@@ -10,9 +10,9 @@ const PAGE_URL = `${SITE_URL}/services/oil-change-springfield-or`
 
 const FAQS = [
   {
-    question: "How often should I change my oil?",
+    question: "How long does a full synthetic oil change last?",
     answer:
-      "Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can often go 5,000–7,500 miles or longer depending on your vehicle and driving conditions. Your owner's manual and your car's oil-life monitor are the most reliable guides — we can help you find the right interval for your specific engine when you come in.",
+      "A full synthetic oil change typically lasts 5,000–7,500 miles, and many modern vehicles can go 7,500–10,000 miles depending on engine design and driving conditions. Conventional oil needs changing every 3,000–5,000 miles. Your vehicle's oil life monitor and owner's manual are the most accurate guides — we check both when you come in and advise the right interval for your engine.",
   },
   {
     question: "Does Two Guys Automotive offer walk-in oil changes?",
@@ -27,14 +27,14 @@ const FAQS = [
 ]
 
 export const metadata: Metadata = {
-  title: "Oil Change in Springfield, OR | Two Guys Automotive Repair",
+  title: "Full Synthetic Oil Change — Springfield, OR | Two Guys Automotive Repair",
   description:
-    "Fast oil change service in Springfield, OR — conventional and synthetic, walk-ins welcome. No appointment needed. 191 N 39th St. Call (541) 744-3626.",
+    "Full synthetic & conventional oil changes in Springfield, OR — walk-ins welcome, no appointment needed. Includes multi-point inspection. 191 N 39th St. Call (541) 744-3626.",
   alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: "Oil Change in Springfield, OR | Two Guys Automotive Repair",
+    title: "Full Synthetic Oil Change in Springfield, OR | Two Guys Automotive Repair",
     description:
-      "Walk-in oil change service in Springfield, OR. Conventional or synthetic. Multi-point inspection included. (541) 744-3626.",
+      "Full synthetic or conventional oil change in Springfield, OR. Walk-in, no appointment. Multi-point inspection included. (541) 744-3626.",
     url: PAGE_URL,
   },
 }
@@ -81,8 +81,8 @@ export default function OilChangePage() {
             <span style={{ color: "var(--color-accent)" }}>Springfield, OR</span>
           </h1>
           <p className="max-w-xl text-sm" style={{ color: "var(--color-secondary)" }}>
-            Conventional and synthetic oil changes — no appointment needed. Walk in at 191 N 39th St,
-            Springfield, OR 97478.
+            Full synthetic &amp; conventional oil changes — walk-ins welcome, no appointment needed.
+            191 N 39th St, Springfield, OR 97478.
           </p>
         </div>
       </section>
@@ -124,20 +124,22 @@ export default function OilChangePage() {
               className="mb-3 mt-8 text-2xl font-extrabold"
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-primary)" }}
             >
-              Conventional vs. Synthetic Oil
+              Full Synthetic Oil Change — Is It Worth It?
             </h2>
             <p className="mb-5 text-sm leading-relaxed" style={{ color: "var(--color-secondary)" }}>
-              Both are available at our Springfield shop. Full synthetic oil offers better thermal
-              stability, superior protection during cold startups (when most engine wear occurs), and
-              longer drain intervals. It costs more per change but is cost-effective over the life
-              of the engine due to fewer service visits. Conventional oil is entirely appropriate
-              for older engines with simpler designs and for vehicles within their factory-specified
-              drain intervals.
+              Yes — for most modern engines, a full synthetic oil change is the better choice.
+              Full synthetic oil provides superior thermal stability, better cold-startup protection
+              (when the majority of engine wear occurs), and cleaner operation at high temperatures.
+              It also lasts longer between changes — typically 5,000–7,500 miles or more — meaning
+              fewer shop visits over the life of the vehicle.
             </p>
             <p className="mb-5 text-sm leading-relaxed" style={{ color: "var(--color-secondary)" }}>
-              High-mileage oil blends, which contain seal conditioners and additional detergents,
-              are a good choice for vehicles over 75,000 miles that show minor leaks or consumption.
-              We will recommend the right oil type for your specific vehicle and driving conditions.
+              Conventional oil remains the right choice for older engines with simpler designs and
+              for vehicles still within their factory-specified drain intervals. High-mileage blends
+              add seal conditioners and extra detergents, making them a smart option for vehicles
+              over 75,000 miles with minor leaks or consumption. We stock conventional, full
+              synthetic, and high-mileage oils for domestic, Japanese, Korean, and European
+              vehicles — we will tell you exactly which one your engine calls for.
             </p>
 
             <h2
@@ -192,8 +194,8 @@ export default function OilChangePage() {
       </section>
 
       <CtaBlock
-        heading="Get an Oil Change in Springfield Today"
-        subtext="Walk in — no appointment needed. 191 N 39th St, Springfield, OR. Mon–Fri 8 AM–5:30 PM, Sat 8 AM–2 PM."
+        heading="Full Synthetic Oil Change — Walk In Today"
+        subtext="No appointment needed. 191 N 39th St, Springfield, OR. Mon–Fri 8 AM–5:30 PM, Sat 8 AM–2 PM. Conventional & synthetic in stock."
       />
     </>
   )
