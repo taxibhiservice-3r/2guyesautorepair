@@ -147,6 +147,18 @@ export function Footer() {
               (541) 744-3626
             </a>
           </p>
+          <p>
+            Managed by{" "}
+            <a
+              href="https://smallbusinessmarketingprofessional.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              style={{ color: "var(--color-secondary)" }}
+            >
+              Small Business Marketing Professional
+            </a>
+          </p>
         </div>
       </div>
     </footer>
