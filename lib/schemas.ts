@@ -19,7 +19,7 @@ export function buildLocalBusinessSchema() {
     telephone: NAP.phone.tel,
     logo: {
       "@type": "ImageObject",
-      url: `${SITE_URL}/logo.webp`,
+      url: `${SITE_URL}/logo.png`,
     },
     image: [
       {

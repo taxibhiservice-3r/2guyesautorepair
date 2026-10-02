@@ -26,7 +26,7 @@ export function Header() {
           className="flex items-center gap-3 transition-opacity hover:opacity-85"
         >
           <Image
-            src="/logo.webp"
+            src="/logo.png"
             alt="Two Guys Automotive Repair logo"
             width={48}
             height={52}
